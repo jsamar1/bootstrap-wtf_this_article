@@ -30,26 +30,31 @@
 
 <div class="container input-group">
   <input type="text" class="form-control col-sm-10" placeholder="News Article URL" aria-describedby="Insert News Article URL">
-  <button class="input-group-addon col-sm-2" onClick="getArticleAnalysis()" id="newsURL">Submit</button>
+  <button class="input-group-addon col-sm-2" id="newsURL">Submit</button>
 </div>
 
 <br>
 <div class="container" id="mainArticleBox">
   <div class="row">
     <span class="col-sm-3"></span>
-    <span class="col-sm-6 text-center" style="background-color:lavenderblush;" id="articleTitle"><h3>.col-sm-4</h3></span>
+    <span class="col-sm-6 text-center" style="background-color:lavenderblush;" id="title"><h3></h3></span>
     <span class="col-sm-3" ></span>
   </div>
   <br>
   <div class="row">
     <span class="col-sm-4 text-center">Author</span>
-    <span class="col-sm-4 text-center" id="articleTitle">Bias</span>
-    <span class="col-sm-4 text-center">Date Publish</span>
+    <span class="col-sm-4 text-center" >Bias</span>
+    <span class="col-sm-4 text-center">Date Published</span>
   </div>
+  <div class="row">
+  <span class="col-sm-4 text-center" id="author"></span>
+  <span class="col-sm-4 text-center" id="articleTitle"></span>
+  <span class="col-sm-4 text-center" id="datePublished"></span>
+</div>
   <br>
   <div class="row">
     <span class="col-sm-2 "></span>
-    <span class="col-sm-8 text-center" id="articleTitle">Big Fat Summary</span>
+    <span class="col-sm-8 text-center" id="summary"></span>
     <span class="col-sm-2"></span>
   </div>
   <br>
@@ -57,6 +62,50 @@
   <span class="col-sm-10"></span>
   <button class="col-sm-2" id="seeRelatedArticles">See Related</button>
 </div>
+</div>
+
+<br><hr>
+
+<<h1 class="text-center">Related Articles</h1>
+<br>
+<div class="container">
+<div class="row">
+            <div class="col-sm-6 text-center">
+              <h3 id="title0">Title</h3>
+              <img id="src0" src="" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h5 id="id0">Bias</h5>
+              <h6 id="author0">Author</h6>
+              <h6 id="datePublished0"> date Pubed: </h6>
+              <span class="text-muted" id="description0">Short description</span>
+            </div>
+            <div class="col-sm-6 text-center">
+              <h3 id="title1">Title</h3>
+              <img id="src1" src="" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h5 id="id1">Bias</h5>
+              <h6 id="author1">Author</h6>
+              <h6 id="datePublished1"> date Pubed: </h6>
+              <span class="text-muted" id="description1">Short description</span>
+            </div>
+          </div>
+<br>
+          <div class="row">
+            <div class="col-sm-6 text-center">
+              <h3 id="title2">Title</h3>
+              <img id="src2" src="" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h5 id="id2">Bias</h5>
+              <h6 id="author2">Author</h6>
+              <h6 id="datePublished2"> date Pubed: </h6>
+              <span class="text-muted" id="description2">Short description</span>
+            </div>
+            <div class="col-sm-6 text-center">
+              <h3 id="title3">Title</h3>
+              <img id="src3" src="" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h5 id="id3">Bias</h5>
+              <h6 id="author3">Author</h6>
+              <h6 id="datePublished3"> date Pubed: </h6>
+              <span class="text-muted" id="description3">Short description</span>
+            </div>
+          </div>
 </div>
 
 </body>
