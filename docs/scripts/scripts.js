@@ -70,3 +70,4 @@ async function fillRelatedArticles(relatedArticles) {
     count++;
   });
 }
+
